@@ -82,7 +82,7 @@ with col2:
 st.divider()
 
 #predicción
-if st.button("🔍 Predecir", use_container_width=True, type="primary"):
+if st.button("Predecir", use_container_width=True, type="primary"):
 
     input_data = pd.DataFrame([{
         'age': age,
@@ -109,9 +109,9 @@ if st.button("🔍 Predecir", use_container_width=True, type="primary"):
     st.subheader("Resultado de la predicción")
 
     if prediccion == 1:
-        st.success(f"✅ **El cliente SÍ suscribirá el depósito**")
+        st.success(f"**El cliente sí suscribirá el depósito**")
     else:
-        st.error(f"❌ **El cliente NO suscribirá el depósito**")
+        st.error(f"**El cliente no suscribirá el depósito**")
 
     st.metric(
         label="Probabilidad de suscripción",
